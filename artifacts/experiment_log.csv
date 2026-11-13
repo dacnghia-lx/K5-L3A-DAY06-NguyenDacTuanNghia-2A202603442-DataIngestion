@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size (character windows inside each section),500,50,"document_id, source, page, page_id, topic, topic_title, section, python_version, snapshot, chunk_index, char_start/end",none,"wordllama/l2_supercat 256d local; Chroma 1.5.9 cosine HNSW",Baseline: windows cut sentences/code blocks so evidence may be split and context lost,4/15,4/15,1/5,1/5,"2501 chunks; ingest 3.40s (embed 0.58s); gold page in top-3 dev 12/15 but evidence split in 8 dev questions; filter compliance 0/3 dev, 0/2 test"
+B,by_paragraph (blank-line paragraphs grouped per section) + context line [topic > section],1000,0,same as A (+heading_prefixed),none,"wordllama/l2_supercat 256d local; Chroma 1.5.9 cosine HNSW",Whole paragraphs + heading context give more coherent chunks and higher Evidence Hit@3 than A,7/15,8/15,0/5,1/5,"1415 chunks; ingest 2.50s (embed 0.57s); coherence 1.8/2 vs A 1.3/2; filter compliance 0/3 dev, 0/2 test"
+C,same as B (same Chroma collection),1000,0,same as B,python_version (only when the question supplies it: q13 q14 q15 dev; q19 q20 test),"wordllama/l2_supercat 256d local; Chroma 1.5.9 cosine HNSW","Only difference to B is the version filter; should fix questions where 3.11/3.13 text is near-duplicate but the answer differs",7/15,8/15,0/5,2/5,"Same 1415 chunks as B; filter compliance 3/3 dev, 2/2 test; chosen strategy (tie with B on dev Hit@3/Hit@1/chunks, broken by dev filter compliance)"

@@ -1,3 +1,41 @@
+# Bài nộp Day 06 — Nguyễn Đắc Tuấn Nghĩa (2A202603442)
+
+> Phần đề bài gốc nằm bên dưới đường kẻ. Phần này là hướng dẫn chạy bài làm.
+
+**Corpus:** tài liệu ngôn ngữ Python (`pydoc_data/topics.py` của CPython 3.11 và 3.13, PSF-2.0) · **Embedding:** WordLlama `l2_supercat` 256 chiều, chạy local, không cần API key, chi phí 0 · **Vector store:** Chroma 1.5.9 `PersistentClient` (lưu trên đĩa, HNSW, cosine, metadata filter) · **Benchmark:** 20 câu (15 dev / 5 test, 5 câu có filter).
+
+## Chạy lại
+
+Yêu cầu Python 3.10–3.13. Không cần Docker, không cần mạng sau khi cài package (weights của WordLlama nằm sẵn trong wheel).
+
+```bash
+cd starter
+python -m venv .venv
+# Windows PowerShell: .venv\Scripts\Activate.ps1   |  macOS/Linux: source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m scripts.verify_benchmark      # kiểm chứng evidence của 20 câu với corpus đã chuẩn hóa
+python -m src.run --rebuild             # đọc -> chuẩn hóa -> chunk A/B -> embed -> Chroma -> top-3 A/B/C
+python -m src.run                       # chạy lại: kiểm tra nạp lại không nhân đôi (embedded=0)
+python -m scripts.audit                 # đối chiếu metadata, tuân thủ filter, demo tài liệu thay đổi
+```
+
+## Bản đồ file
+
+| Nội dung | Đường dẫn |
+|---|---|
+| Mã pipeline | `starter/src/` (`ingestion.py`, `chunking.py`, `embeddings.py`, `store.py`, `evaluation.py`, `run.py`, `corpus.py`) |
+| Script phụ | `starter/scripts/verify_benchmark.py`, `starter/scripts/audit.py` |
+| Corpus + giấy phép | `data/raw/` · manifest: `data/manifest.json` |
+| Benchmark + gold | `benchmark/questions.json` · tiêu chí chọn: `benchmark/selection_criteria.md` |
+| Cấu hình & giả thuyết | `artifacts/experiment_log.csv` |
+| Kết quả | `results/metrics.md`, `results/metrics.json`, `results/traces/{A,B,C}.jsonl`, `results/ingest_log.json`, `results/corpus_stats.json`, `results/run_info.json`, `results/exact_vs_hnsw.json`, `results/reingest_change_demo.json`, `results/errors.log` |
+| Nhãn thủ công | `results/audit/coherence_labels.csv`, `grounding_labels.csv`, `equivalent_evidence_labels.csv`, `metadata_audit.csv`, `filter_compliance.json` |
+| Báo cáo | `report/individual/2A202603442_NguyenDacTuanNghia.md` |
+
+Thư mục `starter/chroma_db/` là index sinh ra, không commit; tạo lại bằng `python -m src.run --rebuild`. Các file pgvector của starter (`docker-compose.yml`, `init.sql`, `scripts/check_setup.py`) được giữ nguyên nhưng không dùng.
+
+---
+
 # Day 06 · Data Ingestion Engineering
 
 **Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**

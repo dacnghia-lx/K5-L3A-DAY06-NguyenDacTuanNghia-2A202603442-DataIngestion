@@ -1,4 +1,6 @@
-# Core setup and PDF parsing. Choose and install an embedding SDK separately.
-psycopg[binary]==3.3.8
-pypdf>=5,<7
-python-dotenv>=1,<2
+# Day 06 pipeline (local, offline after install, no API key, cost 0).
+# Embedding: WordLlama wheel bundles weights + tokenizer (l2_supercat, 256 dims).
+wordllama==0.4.0.post1
+# Vector store: Chroma PersistentClient (on-disk, HNSW, cosine, metadata filter).
+chromadb==1.5.9
+numpy>=2,<3

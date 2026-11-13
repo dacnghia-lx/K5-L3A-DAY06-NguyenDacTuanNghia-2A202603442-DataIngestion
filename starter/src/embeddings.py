@@ -1,4 +1,18 @@
-"""Choose a real embedding provider (API or local) and implement this contract."""
+"""Real local embedding model: WordLlama (l2_supercat, 256 dims).
+
+WordLlama is a trained embedding model (token embeddings extracted from an
+LLM and fine-tuned for sentence similarity, then average-pooled). The PyPI
+wheel ``wordllama==0.4.0.post1`` ships the weights and tokenizer, so it runs
+fully offline on CPU with no API key and no cost. We load the bundled files
+with ``disable_download=True``: if they are missing we fail loudly instead of
+falling back to any mock vectors.
+
+Query and document texts are processed the same way (symmetric model, no
+instruction prefix); vectors are L2-normalized so cosine == dot product.
+"""
+from __future__ import annotations
+
+from pathlib import Path
 from typing import Protocol
 
 
@@ -7,23 +21,37 @@ class Embedder(Protocol):
     dimensions: int
 
     def embed_documents(self, texts: list[str]) -> list[list[float]]:
-        """Return one vector per input text, in the same order."""
         ...
 
     def embed_query(self, question: str) -> list[float]:
-        """Return a query vector compatible with the stored document vectors."""
         ...
 
 
-class MyEmbedder:
-    """TODO: implement a provider adapter; do not silently fall back to mock vectors."""
+class WordLlamaEmbedder:
+    def __init__(self, config: str = "l2_supercat", dim: int = 256, batch_size: int = 64) -> None:
+        import wordllama  # imported lazily so other modules work without it
+        from wordllama import WordLlama
 
-    def __init__(self, model_name: str) -> None:
-        self.model_name = model_name
-        raise NotImplementedError("TODO: initialize real embedder and dimensions")
+        package_dir = Path(wordllama.__file__).parent
+        # The wheel stores the tokenizer under tokenizers/ and weights under weights/;
+        # pointing cache_dir at the package makes WordLlama find both offline.
+        self._model = WordLlama.load(config=config, dim=dim, cache_dir=package_dir,
+                                     disable_download=True)
+        self.version = getattr(wordllama, "__version__", "0.4.0.post1")
+        self.model_name = f"wordllama/{config}"
+        self.dimensions = dim
+        self.batch_size = batch_size
+        probe = self._model.embed(["dimension probe"], norm=True)
+        if probe.shape[1] != dim:
+            raise RuntimeError(f"Model returned {probe.shape[1]} dims, expected {dim}")
 
     def embed_documents(self, texts: list[str]) -> list[list[float]]:
-        raise NotImplementedError("TODO: embed_documents")
+        if not texts:
+            return []
+        vecs = self._model.embed(texts, norm=True, batch_size=self.batch_size)
+        if len(vecs) != len(texts):
+            raise RuntimeError("Embedding count mismatch")
+        return vecs.astype("float32").tolist()
 
     def embed_query(self, question: str) -> list[float]:
-        raise NotImplementedError("TODO: embed_query")
+        return self._model.embed([question], norm=True)[0].astype("float32").tolist()

@@ -1,0 +1,26 @@
+{
+  "sources": [
+    {
+      "python_version": "3.11",
+      "path": "data/raw/pydoc_topics_py3.11.py",
+      "snapshot": "Sun Oct 25 19:41:15 2026",
+      "topics": 79,
+      "pages(sections)": 216,
+      "chars_normalized": 479097,
+      "topics_with_>=1500_chars": 41,
+      "sections_with_>=1500_chars": 97
+    },
+    {
+      "python_version": "3.13",
+      "path": "data/raw/pydoc_topics_py3.13.py",
+      "snapshot": "Sun Oct 25 19:31:17 2026",
+      "topics": 81,
+      "pages(sections)": 252,
+      "chars_normalized": 559304,
+      "topics_with_>=1500_chars": 42,
+      "sections_with_>=1500_chars": 110
+    }
+  ],
+  "errors": [],
+  "load_seconds": 0.045
+}

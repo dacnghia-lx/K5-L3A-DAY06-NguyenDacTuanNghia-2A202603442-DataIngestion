@@ -1,0 +1,2430 @@
+{
+ "corpus": "Python language documentation (pydoc_data/topics.py) for Python 3.11 and 3.13",
+ "counting_rule": "No physical pages. Following GUIDE.md for text without pagination, a content unit is an independent, meaningful pydoc topic with >= 1500 normalized characters. Only the Python 3.13 snapshot is counted toward the 30-unit minimum: 42 topics qualify. The 3.11 snapshot is a different version of the same documentation (used for the python_version filter) and is NOT counted, to avoid counting near-duplicates. Topic 'compound' aggregates text of several statement topics (try/for/with/match/class...) — it is upstream content, not something we duplicated.",
+ "content_units_3_13": 42,
+ "privacy": "Public technical documentation; no personal or confidential data.",
+ "ocr": "Not needed (plain text).",
+ "sources": [
+  {
+   "source_id": "pydoc-topics-py3.11",
+   "title": "Python 3.11 documentation — pydoc topics (Language Reference + Library Reference excerpts, Sphinx text build)",
+   "source_path_or_url": "data/raw/pydoc_topics_py3.11.py",
+   "original_location": "/usr/lib/python3.11/pydoc_data/topics.py (CPython 3.11.18)",
+   "upstream": "https://github.com/python/cpython/blob/3.11/Lib/pydoc_data/topics.py",
+   "license_or_permission": "Python Software Foundation License Version 2 (PSF-2.0) — redistribution permitted with the license notice; see data/raw/PSF_LICENSE.txt",
+   "accessed_at": "2026-11-13",
+   "snapshot": "Sun Oct 25 19:41:15 2026",
+   "sha256": "b722c0cf0d2ca6136c402f2f591ce3335432ff43a772b3dc87c7f8f7aa219360",
+   "physical_pages": "N/A (text, no pagination)",
+   "unit_definition": "document = one pydoc topic (document_id py<ver>/<topic>); page = one heading-delimited section inside the topic (page_id py<ver>/<topic>#<n>)",
+   "topics": 79,
+   "pages_sections": 216,
+   "chars_normalized": 479097,
+   "content_units_counted": [],
+   "pages": [
+    {
+     "page_id": "py3.11/assert#1",
+     "section": "The \"assert\" statement",
+     "chars": 1140
+    },
+    {
+     "page_id": "py3.11/assignment#1",
+     "section": "Assignment statements",
+     "chars": 7126
+    },
+    {
+     "page_id": "py3.11/assignment#2",
+     "section": "Augmented assignment statements",
+     "chars": 2010
+    },
+    {
+     "page_id": "py3.11/assignment#3",
+     "section": "Annotated assignment statements",
+     "chars": 2061
+    },
+    {
+     "page_id": "py3.11/async#1",
+     "section": "Coroutines",
+     "chars": 42
+    },
+    {
+     "page_id": "py3.11/async#2",
+     "section": "Coroutine function definition",
+     "chars": 886
+    },
+    {
+     "page_id": "py3.11/async#3",
+     "section": "The \"async for\" statement",
+     "chars": 886
+    },
+    {
+     "page_id": "py3.11/async#4",
+     "section": "The \"async with\" statement",
+     "chars": 2681
+    },
+    {
+     "page_id": "py3.11/atom-identifiers#1",
+     "section": "Identifiers (Names)",
+     "chars": 1227
+    },
+    {
+     "page_id": "py3.11/atom-literals#1",
+     "section": "Literals",
+     "chars": 778
+    },
+    {
+     "page_id": "py3.11/attribute-access#1",
+     "section": "Customizing attribute access",
+     "chars": 3325
+    },
+    {
+     "page_id": "py3.11/attribute-access#2",
+     "section": "Customizing module attribute access",
+     "chars": 1921
+    },
+    {
+     "page_id": "py3.11/attribute-access#3",
+     "section": "Implementing Descriptors",
+     "chars": 2279
+    },
+    {
+     "page_id": "py3.11/attribute-access#4",
+     "section": "Invoking Descriptors",
+     "chars": 2911
+    },
+    {
+     "page_id": "py3.11/attribute-access#5",
+     "section": "__slots__",
+     "chars": 3320
+    },
+    {
+     "page_id": "py3.11/attribute-references#1",
+     "section": "Attribute references",
+     "chars": 852
+    },
+    {
+     "page_id": "py3.11/augassign#1",
+     "section": "Augmented assignment statements",
+     "chars": 2010
+    },
+    {
+     "page_id": "py3.11/await#1",
+     "section": "Await expression",
+     "chars": 201
+    },
+    {
+     "page_id": "py3.11/binary#1",
+     "section": "Binary arithmetic operations",
+     "chars": 3603
+    },
+    {
+     "page_id": "py3.11/bitwise#1",
+     "section": "Binary bitwise operations",
+     "chars": 827
+    },
+    {
+     "page_id": "py3.11/bltin-code-objects#1",
+     "section": "Code Objects",
+     "chars": 732
+    },
+    {
+     "page_id": "py3.11/bltin-ellipsis-object#1",
+     "section": "The Ellipsis Object",
+     "chars": 301
+    },
+    {
+     "page_id": "py3.11/bltin-null-object#1",
+     "section": "The Null Object",
+     "chars": 281
+    },
+    {
+     "page_id": "py3.11/bltin-type-objects#1",
+     "section": "Type Objects",
+     "chars": 306
+    },
+    {
+     "page_id": "py3.11/booleans#1",
+     "section": "Boolean operations",
+     "chars": 1472
+    },
+    {
+     "page_id": "py3.11/break#1",
+     "section": "The \"break\" statement",
+     "chars": 547
+    },
+    {
+     "page_id": "py3.11/callable-types#1",
+     "section": "Emulating callable objects",
+     "chars": 253
+    },
+    {
+     "page_id": "py3.11/calls#1",
+     "section": "Calls",
+     "chars": 7063
+    },
+    {
+     "page_id": "py3.11/class#1",
+     "section": "Class definitions",
+     "chars": 2981
+    },
+    {
+     "page_id": "py3.11/comparisons#1",
+     "section": "Comparisons",
+     "chars": 1265
+    },
+    {
+     "page_id": "py3.11/comparisons#2",
+     "section": "Value comparisons",
+     "chars": 7020
+    },
+    {
+     "page_id": "py3.11/comparisons#3",
+     "section": "Membership test operations",
+     "chars": 1662
+    },
+    {
+     "page_id": "py3.11/comparisons#4",
+     "section": "Identity comparisons",
+     "chars": 283
+    },
+    {
+     "page_id": "py3.11/compound#1",
+     "section": "Compound statements",
+     "chars": 2658
+    },
+    {
+     "page_id": "py3.11/compound#2",
+     "section": "The \"if\" statement",
+     "chars": 599
+    },
+    {
+     "page_id": "py3.11/compound#3",
+     "section": "The \"while\" statement",
+     "chars": 697
+    },
+    {
+     "page_id": "py3.11/compound#4",
+     "section": "The \"for\" statement",
+     "chars": 1823
+    },
+    {
+     "page_id": "py3.11/compound#5",
+     "section": "The \"try\" statement",
+     "chars": 805
+    },
+    {
+     "page_id": "py3.11/compound#6",
+     "section": "\"except\" clause",
+     "chars": 3074
+    },
+    {
+     "page_id": "py3.11/compound#7",
+     "section": "\"except*\" clause",
+     "chars": 2266
+    },
+    {
+     "page_id": "py3.11/compound#8",
+     "section": "\"else\" clause",
+     "chars": 284
+    },
+    {
+     "page_id": "py3.11/compound#9",
+     "section": "\"finally\" clause",
+     "chars": 1523
+    },
+    {
+     "page_id": "py3.11/compound#10",
+     "section": "The \"with\" statement",
+     "chars": 3267
+    },
+    {
+     "page_id": "py3.11/compound#11",
+     "section": "The \"match\" statement",
+     "chars": 1006
+    },
+    {
+     "page_id": "py3.11/compound#12",
+     "section": "Overview",
+     "chars": 2283
+    },
+    {
+     "page_id": "py3.11/compound#13",
+     "section": "Guards",
+     "chars": 1041
+    },
+    {
+     "page_id": "py3.11/compound#14",
+     "section": "Irrefutable Case Blocks",
+     "chars": 616
+    },
+    {
+     "page_id": "py3.11/compound#15",
+     "section": "Patterns",
+     "chars": 1061
+    },
+    {
+     "page_id": "py3.11/compound#16",
+     "section": "OR Patterns",
+     "chars": 630
+    },
+    {
+     "page_id": "py3.11/compound#17",
+     "section": "AS Patterns",
+     "chars": 453
+    },
+    {
+     "page_id": "py3.11/compound#18",
+     "section": "Literal Patterns",
+     "chars": 973
+    },
+    {
+     "page_id": "py3.11/compound#19",
+     "section": "Capture Patterns",
+     "chars": 742
+    },
+    {
+     "page_id": "py3.11/compound#20",
+     "section": "Wildcard Patterns",
+     "chars": 360
+    },
+    {
+     "page_id": "py3.11/compound#21",
+     "section": "Value Patterns",
+     "chars": 735
+    },
+    {
+     "page_id": "py3.11/compound#22",
+     "section": "Group Patterns",
+     "chars": 268
+    },
+    {
+     "page_id": "py3.11/compound#23",
+     "section": "Sequence Patterns",
+     "chars": 3201
+    },
+    {
+     "page_id": "py3.11/compound#24",
+     "section": "Mapping Patterns",
+     "chars": 1816
+    },
+    {
+     "page_id": "py3.11/compound#25",
+     "section": "Class Patterns",
+     "chars": 3784
+    },
+    {
+     "page_id": "py3.11/compound#26",
+     "section": "Function definitions",
+     "chars": 6983
+    },
+    {
+     "page_id": "py3.11/compound#27",
+     "section": "Class definitions",
+     "chars": 2981
+    },
+    {
+     "page_id": "py3.11/compound#28",
+     "section": "Coroutines",
+     "chars": 42
+    },
+    {
+     "page_id": "py3.11/compound#29",
+     "section": "Coroutine function definition",
+     "chars": 886
+    },
+    {
+     "page_id": "py3.11/compound#30",
+     "section": "The \"async for\" statement",
+     "chars": 886
+    },
+    {
+     "page_id": "py3.11/compound#31",
+     "section": "The \"async with\" statement",
+     "chars": 2681
+    },
+    {
+     "page_id": "py3.11/context-managers#1",
+     "section": "With Statement Context Managers",
+     "chars": 1693
+    },
+    {
+     "page_id": "py3.11/continue#1",
+     "section": "The \"continue\" statement",
+     "chars": 450
+    },
+    {
+     "page_id": "py3.11/conversions#1",
+     "section": "Arithmetic conversions",
+     "chars": 666
+    },
+    {
+     "page_id": "py3.11/customization#1",
+     "section": "Basic customization",
+     "chars": 13770
+    },
+    {
+     "page_id": "py3.11/debugger#1",
+     "section": "\"pdb\" — The Python Debugger",
+     "chars": 6991
+    },
+    {
+     "page_id": "py3.11/debugger#2",
+     "section": "Debugger Commands",
+     "chars": 13626
+    },
+    {
+     "page_id": "py3.11/del#1",
+     "section": "The \"del\" statement",
+     "chars": 936
+    },
+    {
+     "page_id": "py3.11/dict#1",
+     "section": "Dictionary displays",
+     "chars": 2066
+    },
+    {
+     "page_id": "py3.11/dynamic-features#1",
+     "section": "Interaction with dynamic features",
+     "chars": 687
+    },
+    {
+     "page_id": "py3.11/else#1",
+     "section": "The \"if\" statement",
+     "chars": 599
+    },
+    {
+     "page_id": "py3.11/exceptions#1",
+     "section": "Exceptions",
+     "chars": 2195
+    },
+    {
+     "page_id": "py3.11/execmodel#1",
+     "section": "Execution model",
+     "chars": 31
+    },
+    {
+     "page_id": "py3.11/execmodel#2",
+     "section": "Structure of a program",
+     "chars": 978
+    },
+    {
+     "page_id": "py3.11/execmodel#3",
+     "section": "Naming and binding",
+     "chars": 37
+    },
+    {
+     "page_id": "py3.11/execmodel#4",
+     "section": "Binding of names",
+     "chars": 1506
+    },
+    {
+     "page_id": "py3.11/execmodel#5",
+     "section": "Resolution of names",
+     "chars": 3305
+    },
+    {
+     "page_id": "py3.11/execmodel#6",
+     "section": "Builtins and restricted execution",
+     "chars": 766
+    },
+    {
+     "page_id": "py3.11/execmodel#7",
+     "section": "Interaction with dynamic features",
+     "chars": 687
+    },
+    {
+     "page_id": "py3.11/execmodel#8",
+     "section": "Exceptions",
+     "chars": 2195
+    },
+    {
+     "page_id": "py3.11/exprlists#1",
+     "section": "Expression lists",
+     "chars": 1133
+    },
+    {
+     "page_id": "py3.11/floating#1",
+     "section": "Floating point literals",
+     "chars": 914
+    },
+    {
+     "page_id": "py3.11/for#1",
+     "section": "The \"for\" statement",
+     "chars": 1823
+    },
+    {
+     "page_id": "py3.11/formatstrings#1",
+     "section": "Format String Syntax",
+     "chars": 4947
+    },
+    {
+     "page_id": "py3.11/formatstrings#2",
+     "section": "Format Specification Mini-Language",
+     "chars": 16014
+    },
+    {
+     "page_id": "py3.11/formatstrings#3",
+     "section": "Format examples",
+     "chars": 4263
+    },
+    {
+     "page_id": "py3.11/function#1",
+     "section": "Function definitions",
+     "chars": 6983
+    },
+    {
+     "page_id": "py3.11/global#1",
+     "section": "The \"global\" statement",
+     "chars": 1519
+    },
+    {
+     "page_id": "py3.11/id-classes#1",
+     "section": "Reserved classes of identifiers",
+     "chars": 1695
+    },
+    {
+     "page_id": "py3.11/identifiers#1",
+     "section": "Identifiers and keywords",
+     "chars": 2152
+    },
+    {
+     "page_id": "py3.11/identifiers#2",
+     "section": "Keywords",
+     "chars": 563
+    },
+    {
+     "page_id": "py3.11/identifiers#3",
+     "section": "Soft Keywords",
+     "chars": 521
+    },
+    {
+     "page_id": "py3.11/identifiers#4",
+     "section": "Reserved classes of identifiers",
+     "chars": 1695
+    },
+    {
+     "page_id": "py3.11/if#1",
+     "section": "The \"if\" statement",
+     "chars": 599
+    },
+    {
+     "page_id": "py3.11/imaginary#1",
+     "section": "Imaginary literals",
+     "chars": 564
+    },
+    {
+     "page_id": "py3.11/import#1",
+     "section": "The \"import\" statement",
+     "chars": 5479
+    },
+    {
+     "page_id": "py3.11/import#2",
+     "section": "Future statements",
+     "chars": 3343
+    },
+    {
+     "page_id": "py3.11/in#1",
+     "section": "Membership test operations",
+     "chars": 1662
+    },
+    {
+     "page_id": "py3.11/integers#1",
+     "section": "Integer literals",
+     "chars": 1365
+    },
+    {
+     "page_id": "py3.11/lambda#1",
+     "section": "Lambdas",
+     "chars": 524
+    },
+    {
+     "page_id": "py3.11/lists#1",
+     "section": "List displays",
+     "chars": 558
+    },
+    {
+     "page_id": "py3.11/naming#1",
+     "section": "Naming and binding",
+     "chars": 37
+    },
+    {
+     "page_id": "py3.11/naming#2",
+     "section": "Binding of names",
+     "chars": 1506
+    },
+    {
+     "page_id": "py3.11/naming#3",
+     "section": "Resolution of names",
+     "chars": 3305
+    },
+    {
+     "page_id": "py3.11/naming#4",
+     "section": "Builtins and restricted execution",
+     "chars": 766
+    },
+    {
+     "page_id": "py3.11/naming#5",
+     "section": "Interaction with dynamic features",
+     "chars": 687
+    },
+    {
+     "page_id": "py3.11/nonlocal#1",
+     "section": "The \"nonlocal\" statement",
+     "chars": 929
+    },
+    {
+     "page_id": "py3.11/numbers#1",
+     "section": "Numeric literals",
+     "chars": 400
+    },
+    {
+     "page_id": "py3.11/numeric-types#1",
+     "section": "Emulating numeric types",
+     "chars": 5868
+    },
+    {
+     "page_id": "py3.11/objects#1",
+     "section": "Objects, values and types",
+     "chars": 4554
+    },
+    {
+     "page_id": "py3.11/operator-summary#1",
+     "section": "Operator precedence",
+     "chars": 7330
+    },
+    {
+     "page_id": "py3.11/pass#1",
+     "section": "The \"pass\" statement",
+     "chars": 372
+    },
+    {
+     "page_id": "py3.11/power#1",
+     "section": "The power operator",
+     "chars": 1233
+    },
+    {
+     "page_id": "py3.11/raise#1",
+     "section": "The \"raise\" statement",
+     "chars": 3955
+    },
+    {
+     "page_id": "py3.11/return#1",
+     "section": "The \"return\" statement",
+     "chars": 1046
+    },
+    {
+     "page_id": "py3.11/sequence-types#1",
+     "section": "Emulating container types",
+     "chars": 6774
+    },
+    {
+     "page_id": "py3.11/shifting#1",
+     "section": "Shifting operations",
+     "chars": 564
+    },
+    {
+     "page_id": "py3.11/slicings#1",
+     "section": "Slicings",
+     "chars": 1676
+    },
+    {
+     "page_id": "py3.11/specialattrs#1",
+     "section": "Special Attributes",
+     "chars": 1395
+    },
+    {
+     "page_id": "py3.11/specialnames#1",
+     "section": "Special method names",
+     "chars": 1361
+    },
+    {
+     "page_id": "py3.11/specialnames#2",
+     "section": "Basic customization",
+     "chars": 13770
+    },
+    {
+     "page_id": "py3.11/specialnames#3",
+     "section": "Customizing attribute access",
+     "chars": 3325
+    },
+    {
+     "page_id": "py3.11/specialnames#4",
+     "section": "Customizing module attribute access",
+     "chars": 1921
+    },
+    {
+     "page_id": "py3.11/specialnames#5",
+     "section": "Implementing Descriptors",
+     "chars": 2279
+    },
+    {
+     "page_id": "py3.11/specialnames#6",
+     "section": "Invoking Descriptors",
+     "chars": 2911
+    },
+    {
+     "page_id": "py3.11/specialnames#7",
+     "section": "__slots__",
+     "chars": 3320
+    },
+    {
+     "page_id": "py3.11/specialnames#8",
+     "section": "Customizing class creation",
+     "chars": 2451
+    },
+    {
+     "page_id": "py3.11/specialnames#9",
+     "section": "Metaclasses",
+     "chars": 979
+    },
+    {
+     "page_id": "py3.11/specialnames#10",
+     "section": "Resolving MRO entries",
+     "chars": 791
+    },
+    {
+     "page_id": "py3.11/specialnames#11",
+     "section": "Determining the appropriate metaclass",
+     "chars": 848
+    },
+    {
+     "page_id": "py3.11/specialnames#12",
+     "section": "Preparing the class namespace",
+     "chars": 797
+    },
+    {
+     "page_id": "py3.11/specialnames#13",
+     "section": "Executing the class body",
+     "chars": 695
+    },
+    {
+     "page_id": "py3.11/specialnames#14",
+     "section": "Creating the class object",
+     "chars": 2249
+    },
+    {
+     "page_id": "py3.11/specialnames#15",
+     "section": "Uses for metaclasses",
+     "chars": 290
+    },
+    {
+     "page_id": "py3.11/specialnames#16",
+     "section": "Customizing instance and subclass checks",
+     "chars": 1475
+    },
+    {
+     "page_id": "py3.11/specialnames#17",
+     "section": "Emulating generic types",
+     "chars": 1129
+    },
+    {
+     "page_id": "py3.11/specialnames#18",
+     "section": "The purpose of *__class_getitem__*",
+     "chars": 812
+    },
+    {
+     "page_id": "py3.11/specialnames#19",
+     "section": "*__class_getitem__* versus *__getitem__*",
+     "chars": 2973
+    },
+    {
+     "page_id": "py3.11/specialnames#20",
+     "section": "Emulating callable objects",
+     "chars": 253
+    },
+    {
+     "page_id": "py3.11/specialnames#21",
+     "section": "Emulating container types",
+     "chars": 6774
+    },
+    {
+     "page_id": "py3.11/specialnames#22",
+     "section": "Emulating numeric types",
+     "chars": 5868
+    },
+    {
+     "page_id": "py3.11/specialnames#23",
+     "section": "With Statement Context Managers",
+     "chars": 1693
+    },
+    {
+     "page_id": "py3.11/specialnames#24",
+     "section": "Customizing positional arguments in class pattern matching",
+     "chars": 1260
+    },
+    {
+     "page_id": "py3.11/specialnames#25",
+     "section": "Special method lookup",
+     "chars": 2570
+    },
+    {
+     "page_id": "py3.11/string-methods#1",
+     "section": "String Methods",
+     "chars": 24733
+    },
+    {
+     "page_id": "py3.11/strings#1",
+     "section": "String and Bytes literals",
+     "chars": 3511
+    },
+    {
+     "page_id": "py3.11/strings#2",
+     "section": "Escape sequences",
+     "chars": 5692
+    },
+    {
+     "page_id": "py3.11/subscriptions#1",
+     "section": "Subscriptions",
+     "chars": 2434
+    },
+    {
+     "page_id": "py3.11/truth#1",
+     "section": "Truth Value Testing",
+     "chars": 886
+    },
+    {
+     "page_id": "py3.11/try#1",
+     "section": "The \"try\" statement",
+     "chars": 805
+    },
+    {
+     "page_id": "py3.11/try#2",
+     "section": "\"except\" clause",
+     "chars": 3074
+    },
+    {
+     "page_id": "py3.11/try#3",
+     "section": "\"except*\" clause",
+     "chars": 2266
+    },
+    {
+     "page_id": "py3.11/try#4",
+     "section": "\"else\" clause",
+     "chars": 284
+    },
+    {
+     "page_id": "py3.11/try#5",
+     "section": "\"finally\" clause",
+     "chars": 1523
+    },
+    {
+     "page_id": "py3.11/types#1",
+     "section": "The standard type hierarchy",
+     "chars": 683
+    },
+    {
+     "page_id": "py3.11/types#2",
+     "section": "None",
+     "chars": 307
+    },
+    {
+     "page_id": "py3.11/types#3",
+     "section": "NotImplemented",
+     "chars": 750
+    },
+    {
+     "page_id": "py3.11/types#4",
+     "section": "Ellipsis",
+     "chars": 201
+    },
+    {
+     "page_id": "py3.11/types#5",
+     "section": "\"numbers.Number\"",
+     "chars": 1017
+    },
+    {
+     "page_id": "py3.11/types#6",
+     "section": "\"numbers.Integral\"",
+     "chars": 1120
+    },
+    {
+     "page_id": "py3.11/types#7",
+     "section": "\"numbers.Real\" (\"float\")",
+     "chars": 559
+    },
+    {
+     "page_id": "py3.11/types#8",
+     "section": "\"numbers.Complex\" (\"complex\")",
+     "chars": 341
+    },
+    {
+     "page_id": "py3.11/types#9",
+     "section": "Sequences",
+     "chars": 1009
+    },
+    {
+     "page_id": "py3.11/types#10",
+     "section": "Immutable sequences",
+     "chars": 1785
+    },
+    {
+     "page_id": "py3.11/types#11",
+     "section": "Mutable sequences",
+     "chars": 872
+    },
+    {
+     "page_id": "py3.11/types#12",
+     "section": "Set types",
+     "chars": 1135
+    },
+    {
+     "page_id": "py3.11/types#13",
+     "section": "Mappings",
+     "chars": 385
+    },
+    {
+     "page_id": "py3.11/types#14",
+     "section": "Dictionaries",
+     "chars": 1366
+    },
+    {
+     "page_id": "py3.11/types#15",
+     "section": "Callable types",
+     "chars": 123
+    },
+    {
+     "page_id": "py3.11/types#16",
+     "section": "User-defined functions",
+     "chars": 269
+    },
+    {
+     "page_id": "py3.11/types#17",
+     "section": "Special read-only attributes",
+     "chars": 1462
+    },
+    {
+     "page_id": "py3.11/types#18",
+     "section": "Special writable attributes",
+     "chars": 4341
+    },
+    {
+     "page_id": "py3.11/types#19",
+     "section": "Instance methods",
+     "chars": 3984
+    },
+    {
+     "page_id": "py3.11/types#20",
+     "section": "Generator functions",
+     "chars": 616
+    },
+    {
+     "page_id": "py3.11/types#21",
+     "section": "Coroutine functions",
+     "chars": 320
+    },
+    {
+     "page_id": "py3.11/types#22",
+     "section": "Asynchronous generator functions",
+     "chars": 755
+    },
+    {
+     "page_id": "py3.11/types#23",
+     "section": "Built-in functions",
+     "chars": 650
+    },
+    {
+     "page_id": "py3.11/types#24",
+     "section": "Built-in methods",
+     "chars": 449
+    },
+    {
+     "page_id": "py3.11/types#25",
+     "section": "Classes",
+     "chars": 310
+    },
+    {
+     "page_id": "py3.11/types#26",
+     "section": "Class Instances",
+     "chars": 134
+    },
+    {
+     "page_id": "py3.11/types#27",
+     "section": "Modules",
+     "chars": 1958
+    },
+    {
+     "page_id": "py3.11/types#28",
+     "section": "Custom classes",
+     "chars": 2136
+    },
+    {
+     "page_id": "py3.11/types#29",
+     "section": "Class instances",
+     "chars": 1414
+    },
+    {
+     "page_id": "py3.11/types#30",
+     "section": "I/O objects (also known as file objects)",
+     "chars": 649
+    },
+    {
+     "page_id": "py3.11/types#31",
+     "section": "Internal types",
+     "chars": 218
+    },
+    {
+     "page_id": "py3.11/types#32",
+     "section": "Code objects",
+     "chars": 598
+    },
+    {
+     "page_id": "py3.11/types#33",
+     "section": "Special read-only attributes",
+     "chars": 7039
+    },
+    {
+     "page_id": "py3.11/types#34",
+     "section": "Methods on code objects",
+     "chars": 2867
+    },
+    {
+     "page_id": "py3.11/types#35",
+     "section": "Frame objects",
+     "chars": 159
+    },
+    {
+     "page_id": "py3.11/types#36",
+     "section": "Special read-only attributes",
+     "chars": 2542
+    },
+    {
+     "page_id": "py3.11/types#37",
+     "section": "Special writable attributes",
+     "chars": 2324
+    },
+    {
+     "page_id": "py3.11/types#38",
+     "section": "Frame object methods",
+     "chars": 485
+    },
+    {
+     "page_id": "py3.11/types#39",
+     "section": "Traceback objects",
+     "chars": 2749
+    },
+    {
+     "page_id": "py3.11/types#40",
+     "section": "Slice objects",
+     "chars": 823
+    },
+    {
+     "page_id": "py3.11/types#41",
+     "section": "Static method objects",
+     "chars": 566
+    },
+    {
+     "page_id": "py3.11/types#42",
+     "section": "Class method objects",
+     "chars": 399
+    },
+    {
+     "page_id": "py3.11/typesfunctions#1",
+     "section": "Functions",
+     "chars": 427
+    },
+    {
+     "page_id": "py3.11/typesmapping#1",
+     "section": "Mapping Types — \"dict\"",
+     "chars": 9283
+    },
+    {
+     "page_id": "py3.11/typesmapping#2",
+     "section": "Dictionary view objects",
+     "chars": 3031
+    },
+    {
+     "page_id": "py3.11/typesmethods#1",
+     "section": "Methods",
+     "chars": 1662
+    },
+    {
+     "page_id": "py3.11/typesmodules#1",
+     "section": "Modules",
+     "chars": 1051
+    },
+    {
+     "page_id": "py3.11/typesseq#1",
+     "section": "Sequence Types — \"list\", \"tuple\", \"range\"",
+     "chars": 275
+    },
+    {
+     "page_id": "py3.11/typesseq#2",
+     "section": "Common Sequence Operations",
+     "chars": 7931
+    },
+    {
+     "page_id": "py3.11/typesseq#3",
+     "section": "Immutable Sequence Types",
+     "chars": 456
+    },
+    {
+     "page_id": "py3.11/typesseq#4",
+     "section": "Mutable Sequence Types",
+     "chars": 6128
+    },
+    {
+     "page_id": "py3.11/typesseq#5",
+     "section": "Lists",
+     "chars": 3252
+    },
+    {
+     "page_id": "py3.11/typesseq#6",
+     "section": "Tuples",
+     "chars": 1704
+    },
+    {
+     "page_id": "py3.11/typesseq#7",
+     "section": "Ranges",
+     "chars": 3706
+    },
+    {
+     "page_id": "py3.11/typesseq-mutable#1",
+     "section": "Mutable Sequence Types",
+     "chars": 6128
+    },
+    {
+     "page_id": "py3.11/unary#1",
+     "section": "Unary arithmetic and bitwise operations",
+     "chars": 844
+    },
+    {
+     "page_id": "py3.11/while#1",
+     "section": "The \"while\" statement",
+     "chars": 697
+    },
+    {
+     "page_id": "py3.11/with#1",
+     "section": "The \"with\" statement",
+     "chars": 3267
+    },
+    {
+     "page_id": "py3.11/yield#1",
+     "section": "The \"yield\" statement",
+     "chars": 811
+    }
+   ]
+  },
+  {
+   "source_id": "pydoc-topics-py3.13",
+   "title": "Python 3.13 documentation — pydoc topics (Language Reference + Library Reference excerpts, Sphinx text build)",
+   "source_path_or_url": "data/raw/pydoc_topics_py3.13.py",
+   "original_location": "/usr/lib/python3.13/pydoc_data/topics.py (CPython 3.13.18)",
+   "upstream": "https://github.com/python/cpython/blob/3.13/Lib/pydoc_data/topics.py",
+   "license_or_permission": "Python Software Foundation License Version 2 (PSF-2.0) — redistribution permitted with the license notice; see data/raw/PSF_LICENSE.txt",
+   "accessed_at": "2026-11-13",
+   "snapshot": "Sun Oct 25 19:31:17 2026",
+   "sha256": "7c8b86780c8fb69c5aaf71a0ea137d41f81e1edc3107540529e8d0a2db302faa",
+   "physical_pages": "N/A (text, no pagination)",
+   "unit_definition": "document = one pydoc topic (document_id py<ver>/<topic>); page = one heading-delimited section inside the topic (page_id py<ver>/<topic>#<n>)",
+   "topics": 81,
+   "pages_sections": 252,
+   "chars_normalized": 559304,
+   "content_units_counted": [
+    "assignment",
+    "async",
+    "atom-identifiers",
+    "attribute-access",
+    "augassign",
+    "binary",
+    "calls",
+    "class",
+    "comparisons",
+    "compound",
+    "context-managers",
+    "customization",
+    "debugger",
+    "dict",
+    "exceptions",
+    "execmodel",
+    "for",
+    "formatstrings",
+    "function",
+    "id-classes",
+    "identifiers",
+    "import",
+    "in",
+    "match",
+    "naming",
+    "numeric-types",
+    "objects",
+    "operator-summary",
+    "raise",
+    "sequence-types",
+    "slicings",
+    "specialnames",
+    "string-methods",
+    "strings",
+    "subscriptions",
+    "try",
+    "types",
+    "typesmapping",
+    "typesmethods",
+    "typesseq",
+    "typesseq-mutable",
+    "with"
+   ],
+   "pages": [
+    {
+     "page_id": "py3.13/assert#1",
+     "section": "The \"assert\" statement",
+     "chars": 1141
+    },
+    {
+     "page_id": "py3.13/assignment#1",
+     "section": "Assignment statements",
+     "chars": 7179
+    },
+    {
+     "page_id": "py3.13/assignment#2",
+     "section": "Augmented assignment statements",
+     "chars": 2029
+    },
+    {
+     "page_id": "py3.13/assignment#3",
+     "section": "Annotated assignment statements",
+     "chars": 2219
+    },
+    {
+     "page_id": "py3.13/assignment-expressions#1",
+     "section": "Assignment expressions",
+     "chars": 991
+    },
+    {
+     "page_id": "py3.13/async#1",
+     "section": "Coroutines",
+     "chars": 44
+    },
+    {
+     "page_id": "py3.13/async#2",
+     "section": "Coroutine function definition",
+     "chars": 886
+    },
+    {
+     "page_id": "py3.13/async#3",
+     "section": "The \"async for\" statement",
+     "chars": 885
+    },
+    {
+     "page_id": "py3.13/async#4",
+     "section": "The \"async with\" statement",
+     "chars": 1047
+    },
+    {
+     "page_id": "py3.13/atom-identifiers#1",
+     "section": "Identifiers (Names)",
+     "chars": 384
+    },
+    {
+     "page_id": "py3.13/atom-identifiers#2",
+     "section": "Private name mangling",
+     "chars": 1628
+    },
+    {
+     "page_id": "py3.13/atom-literals#1",
+     "section": "Literals",
+     "chars": 778
+    },
+    {
+     "page_id": "py3.13/attribute-access#1",
+     "section": "Customizing attribute access",
+     "chars": 3381
+    },
+    {
+     "page_id": "py3.13/attribute-access#2",
+     "section": "Customizing module attribute access",
+     "chars": 1980
+    },
+    {
+     "page_id": "py3.13/attribute-access#3",
+     "section": "Implementing Descriptors",
+     "chars": 2349
+    },
+    {
+     "page_id": "py3.13/attribute-access#4",
+     "section": "Invoking Descriptors",
+     "chars": 2911
+    },
+    {
+     "page_id": "py3.13/attribute-access#5",
+     "section": "__slots__",
+     "chars": 3344
+    },
+    {
+     "page_id": "py3.13/attribute-references#1",
+     "section": "Attribute references",
+     "chars": 852
+    },
+    {
+     "page_id": "py3.13/augassign#1",
+     "section": "Augmented assignment statements",
+     "chars": 2029
+    },
+    {
+     "page_id": "py3.13/await#1",
+     "section": "Await expression",
+     "chars": 203
+    },
+    {
+     "page_id": "py3.13/binary#1",
+     "section": "Binary arithmetic operations",
+     "chars": 3858
+    },
+    {
+     "page_id": "py3.13/bitwise#1",
+     "section": "Binary bitwise operations",
+     "chars": 827
+    },
+    {
+     "page_id": "py3.13/bltin-code-objects#1",
+     "section": "Code Objects",
+     "chars": 732
+    },
+    {
+     "page_id": "py3.13/bltin-ellipsis-object#1",
+     "section": "The Ellipsis Object",
+     "chars": 1010
+    },
+    {
+     "page_id": "py3.13/bltin-null-object#1",
+     "section": "The Null Object",
+     "chars": 281
+    },
+    {
+     "page_id": "py3.13/bltin-type-objects#1",
+     "section": "Type Objects",
+     "chars": 306
+    },
+    {
+     "page_id": "py3.13/booleans#1",
+     "section": "Boolean operations",
+     "chars": 1472
+    },
+    {
+     "page_id": "py3.13/break#1",
+     "section": "The \"break\" statement",
+     "chars": 547
+    },
+    {
+     "page_id": "py3.13/callable-types#1",
+     "section": "Emulating callable objects",
+     "chars": 312
+    },
+    {
+     "page_id": "py3.13/calls#1",
+     "section": "Calls",
+     "chars": 7205
+    },
+    {
+     "page_id": "py3.13/class#1",
+     "section": "Class definitions",
+     "chars": 3352
+    },
+    {
+     "page_id": "py3.13/comparisons#1",
+     "section": "Comparisons",
+     "chars": 1265
+    },
+    {
+     "page_id": "py3.13/comparisons#2",
+     "section": "Value comparisons",
+     "chars": 7030
+    },
+    {
+     "page_id": "py3.13/comparisons#3",
+     "section": "Membership test operations",
+     "chars": 1662
+    },
+    {
+     "page_id": "py3.13/comparisons#4",
+     "section": "Identity comparisons",
+     "chars": 283
+    },
+    {
+     "page_id": "py3.13/compound#1",
+     "section": "Compound statements",
+     "chars": 2658
+    },
+    {
+     "page_id": "py3.13/compound#2",
+     "section": "The \"if\" statement",
+     "chars": 599
+    },
+    {
+     "page_id": "py3.13/compound#3",
+     "section": "The \"while\" statement",
+     "chars": 697
+    },
+    {
+     "page_id": "py3.13/compound#4",
+     "section": "The \"for\" statement",
+     "chars": 1826
+    },
+    {
+     "page_id": "py3.13/compound#5",
+     "section": "The \"try\" statement",
+     "chars": 805
+    },
+    {
+     "page_id": "py3.13/compound#6",
+     "section": "\"except\" clause",
+     "chars": 2989
+    },
+    {
+     "page_id": "py3.13/compound#7",
+     "section": "\"except*\" clause",
+     "chars": 2755
+    },
+    {
+     "page_id": "py3.13/compound#8",
+     "section": "\"else\" clause",
+     "chars": 284
+    },
+    {
+     "page_id": "py3.13/compound#9",
+     "section": "\"finally\" clause",
+     "chars": 1521
+    },
+    {
+     "page_id": "py3.13/compound#10",
+     "section": "The \"with\" statement",
+     "chars": 3318
+    },
+    {
+     "page_id": "py3.13/compound#11",
+     "section": "The \"match\" statement",
+     "chars": 1020
+    },
+    {
+     "page_id": "py3.13/compound#12",
+     "section": "Overview",
+     "chars": 2283
+    },
+    {
+     "page_id": "py3.13/compound#13",
+     "section": "Guards",
+     "chars": 1046
+    },
+    {
+     "page_id": "py3.13/compound#14",
+     "section": "Irrefutable Case Blocks",
+     "chars": 616
+    },
+    {
+     "page_id": "py3.13/compound#15",
+     "section": "Patterns",
+     "chars": 1061
+    },
+    {
+     "page_id": "py3.13/compound#16",
+     "section": "OR Patterns",
+     "chars": 630
+    },
+    {
+     "page_id": "py3.13/compound#17",
+     "section": "AS Patterns",
+     "chars": 453
+    },
+    {
+     "page_id": "py3.13/compound#18",
+     "section": "Literal Patterns",
+     "chars": 952
+    },
+    {
+     "page_id": "py3.13/compound#19",
+     "section": "Capture Patterns",
+     "chars": 742
+    },
+    {
+     "page_id": "py3.13/compound#20",
+     "section": "Wildcard Patterns",
+     "chars": 360
+    },
+    {
+     "page_id": "py3.13/compound#21",
+     "section": "Value Patterns",
+     "chars": 735
+    },
+    {
+     "page_id": "py3.13/compound#22",
+     "section": "Group Patterns",
+     "chars": 268
+    },
+    {
+     "page_id": "py3.13/compound#23",
+     "section": "Sequence Patterns",
+     "chars": 3206
+    },
+    {
+     "page_id": "py3.13/compound#24",
+     "section": "Mapping Patterns",
+     "chars": 1818
+    },
+    {
+     "page_id": "py3.13/compound#25",
+     "section": "Class Patterns",
+     "chars": 3790
+    },
+    {
+     "page_id": "py3.13/compound#26",
+     "section": "Function definitions",
+     "chars": 7880
+    },
+    {
+     "page_id": "py3.13/compound#27",
+     "section": "Class definitions",
+     "chars": 3352
+    },
+    {
+     "page_id": "py3.13/compound#28",
+     "section": "Coroutines",
+     "chars": 44
+    },
+    {
+     "page_id": "py3.13/compound#29",
+     "section": "Coroutine function definition",
+     "chars": 886
+    },
+    {
+     "page_id": "py3.13/compound#30",
+     "section": "The \"async for\" statement",
+     "chars": 885
+    },
+    {
+     "page_id": "py3.13/compound#31",
+     "section": "The \"async with\" statement",
+     "chars": 1047
+    },
+    {
+     "page_id": "py3.13/compound#32",
+     "section": "Type parameter lists",
+     "chars": 4306
+    },
+    {
+     "page_id": "py3.13/compound#33",
+     "section": "Generic functions",
+     "chars": 1676
+    },
+    {
+     "page_id": "py3.13/compound#34",
+     "section": "Generic classes",
+     "chars": 1051
+    },
+    {
+     "page_id": "py3.13/compound#35",
+     "section": "Generic type aliases",
+     "chars": 2357
+    },
+    {
+     "page_id": "py3.13/context-managers#1",
+     "section": "With Statement Context Managers",
+     "chars": 1765
+    },
+    {
+     "page_id": "py3.13/continue#1",
+     "section": "The \"continue\" statement",
+     "chars": 450
+    },
+    {
+     "page_id": "py3.13/conversions#1",
+     "section": "Arithmetic conversions",
+     "chars": 666
+    },
+    {
+     "page_id": "py3.13/customization#1",
+     "section": "Basic customization",
+     "chars": 14569
+    },
+    {
+     "page_id": "py3.13/debugger#1",
+     "section": "\"pdb\" — The Python Debugger",
+     "chars": 1943
+    },
+    {
+     "page_id": "py3.13/debugger#2",
+     "section": "Command-line interface",
+     "chars": 5544
+    },
+    {
+     "page_id": "py3.13/debugger#3",
+     "section": "Debugger commands",
+     "chars": 16485
+    },
+    {
+     "page_id": "py3.13/del#1",
+     "section": "The \"del\" statement",
+     "chars": 937
+    },
+    {
+     "page_id": "py3.13/dict#1",
+     "section": "Dictionary displays",
+     "chars": 2068
+    },
+    {
+     "page_id": "py3.13/dynamic-features#1",
+     "section": "Interaction with dynamic features",
+     "chars": 687
+    },
+    {
+     "page_id": "py3.13/else#1",
+     "section": "The \"if\" statement",
+     "chars": 599
+    },
+    {
+     "page_id": "py3.13/exceptions#1",
+     "section": "Exceptions",
+     "chars": 2039
+    },
+    {
+     "page_id": "py3.13/execmodel#1",
+     "section": "Execution model",
+     "chars": 31
+    },
+    {
+     "page_id": "py3.13/execmodel#2",
+     "section": "Structure of a program",
+     "chars": 978
+    },
+    {
+     "page_id": "py3.13/execmodel#3",
+     "section": "Naming and binding",
+     "chars": 37
+    },
+    {
+     "page_id": "py3.13/execmodel#4",
+     "section": "Binding of names",
+     "chars": 1553
+    },
+    {
+     "page_id": "py3.13/execmodel#5",
+     "section": "Resolution of names",
+     "chars": 3679
+    },
+    {
+     "page_id": "py3.13/execmodel#6",
+     "section": "Annotation scopes",
+     "chars": 2351
+    },
+    {
+     "page_id": "py3.13/execmodel#7",
+     "section": "Lazy evaluation",
+     "chars": 1541
+    },
+    {
+     "page_id": "py3.13/execmodel#8",
+     "section": "Builtins and restricted execution",
+     "chars": 766
+    },
+    {
+     "page_id": "py3.13/execmodel#9",
+     "section": "Interaction with dynamic features",
+     "chars": 687
+    },
+    {
+     "page_id": "py3.13/execmodel#10",
+     "section": "Exceptions",
+     "chars": 2039
+    },
+    {
+     "page_id": "py3.13/execmodel#11",
+     "section": "Runtime Components",
+     "chars": 37
+    },
+    {
+     "page_id": "py3.13/execmodel#12",
+     "section": "General Computing Model",
+     "chars": 2835
+    },
+    {
+     "page_id": "py3.13/execmodel#13",
+     "section": "Python Runtime Model",
+     "chars": 5179
+    },
+    {
+     "page_id": "py3.13/exprlists#1",
+     "section": "Expression lists",
+     "chars": 1416
+    },
+    {
+     "page_id": "py3.13/floating#1",
+     "section": "Floating-point literals",
+     "chars": 914
+    },
+    {
+     "page_id": "py3.13/for#1",
+     "section": "The \"for\" statement",
+     "chars": 1826
+    },
+    {
+     "page_id": "py3.13/formatstrings#1",
+     "section": "Format string syntax",
+     "chars": 4947
+    },
+    {
+     "page_id": "py3.13/formatstrings#2",
+     "section": "Format specification mini-language",
+     "chars": 18455
+    },
+    {
+     "page_id": "py3.13/formatstrings#3",
+     "section": "Format examples",
+     "chars": 4462
+    },
+    {
+     "page_id": "py3.13/function#1",
+     "section": "Function definitions",
+     "chars": 7880
+    },
+    {
+     "page_id": "py3.13/global#1",
+     "section": "The \"global\" statement",
+     "chars": 1288
+    },
+    {
+     "page_id": "py3.13/id-classes#1",
+     "section": "Reserved classes of identifiers",
+     "chars": 1695
+    },
+    {
+     "page_id": "py3.13/identifiers#1",
+     "section": "Identifiers and keywords",
+     "chars": 2128
+    },
+    {
+     "page_id": "py3.13/identifiers#2",
+     "section": "Keywords",
+     "chars": 563
+    },
+    {
+     "page_id": "py3.13/identifiers#3",
+     "section": "Soft Keywords",
+     "chars": 635
+    },
+    {
+     "page_id": "py3.13/identifiers#4",
+     "section": "Reserved classes of identifiers",
+     "chars": 1695
+    },
+    {
+     "page_id": "py3.13/if#1",
+     "section": "The \"if\" statement",
+     "chars": 599
+    },
+    {
+     "page_id": "py3.13/imaginary#1",
+     "section": "Imaginary literals",
+     "chars": 564
+    },
+    {
+     "page_id": "py3.13/import#1",
+     "section": "The \"import\" statement",
+     "chars": 5669
+    },
+    {
+     "page_id": "py3.13/import#2",
+     "section": "Future statements",
+     "chars": 3343
+    },
+    {
+     "page_id": "py3.13/in#1",
+     "section": "Membership test operations",
+     "chars": 1662
+    },
+    {
+     "page_id": "py3.13/integers#1",
+     "section": "Integer literals",
+     "chars": 1365
+    },
+    {
+     "page_id": "py3.13/lambda#1",
+     "section": "Lambdas",
+     "chars": 524
+    },
+    {
+     "page_id": "py3.13/lists#1",
+     "section": "List displays",
+     "chars": 570
+    },
+    {
+     "page_id": "py3.13/match#1",
+     "section": "The \"match\" statement",
+     "chars": 1020
+    },
+    {
+     "page_id": "py3.13/match#2",
+     "section": "Overview",
+     "chars": 2283
+    },
+    {
+     "page_id": "py3.13/match#3",
+     "section": "Guards",
+     "chars": 1046
+    },
+    {
+     "page_id": "py3.13/match#4",
+     "section": "Irrefutable Case Blocks",
+     "chars": 616
+    },
+    {
+     "page_id": "py3.13/match#5",
+     "section": "Patterns",
+     "chars": 1061
+    },
+    {
+     "page_id": "py3.13/match#6",
+     "section": "OR Patterns",
+     "chars": 630
+    },
+    {
+     "page_id": "py3.13/match#7",
+     "section": "AS Patterns",
+     "chars": 453
+    },
+    {
+     "page_id": "py3.13/match#8",
+     "section": "Literal Patterns",
+     "chars": 952
+    },
+    {
+     "page_id": "py3.13/match#9",
+     "section": "Capture Patterns",
+     "chars": 742
+    },
+    {
+     "page_id": "py3.13/match#10",
+     "section": "Wildcard Patterns",
+     "chars": 360
+    },
+    {
+     "page_id": "py3.13/match#11",
+     "section": "Value Patterns",
+     "chars": 735
+    },
+    {
+     "page_id": "py3.13/match#12",
+     "section": "Group Patterns",
+     "chars": 268
+    },
+    {
+     "page_id": "py3.13/match#13",
+     "section": "Sequence Patterns",
+     "chars": 3206
+    },
+    {
+     "page_id": "py3.13/match#14",
+     "section": "Mapping Patterns",
+     "chars": 1818
+    },
+    {
+     "page_id": "py3.13/match#15",
+     "section": "Class Patterns",
+     "chars": 3790
+    },
+    {
+     "page_id": "py3.13/naming#1",
+     "section": "Naming and binding",
+     "chars": 37
+    },
+    {
+     "page_id": "py3.13/naming#2",
+     "section": "Binding of names",
+     "chars": 1553
+    },
+    {
+     "page_id": "py3.13/naming#3",
+     "section": "Resolution of names",
+     "chars": 3679
+    },
+    {
+     "page_id": "py3.13/naming#4",
+     "section": "Annotation scopes",
+     "chars": 2351
+    },
+    {
+     "page_id": "py3.13/naming#5",
+     "section": "Lazy evaluation",
+     "chars": 1541
+    },
+    {
+     "page_id": "py3.13/naming#6",
+     "section": "Builtins and restricted execution",
+     "chars": 766
+    },
+    {
+     "page_id": "py3.13/naming#7",
+     "section": "Interaction with dynamic features",
+     "chars": 687
+    },
+    {
+     "page_id": "py3.13/nonlocal#1",
+     "section": "The \"nonlocal\" statement",
+     "chars": 1113
+    },
+    {
+     "page_id": "py3.13/numbers#1",
+     "section": "Numeric literals",
+     "chars": 400
+    },
+    {
+     "page_id": "py3.13/numeric-types#1",
+     "section": "Emulating numeric types",
+     "chars": 5868
+    },
+    {
+     "page_id": "py3.13/objects#1",
+     "section": "Objects, values and types",
+     "chars": 4717
+    },
+    {
+     "page_id": "py3.13/operator-summary#1",
+     "section": "Operator precedence",
+     "chars": 7330
+    },
+    {
+     "page_id": "py3.13/pass#1",
+     "section": "The \"pass\" statement",
+     "chars": 372
+    },
+    {
+     "page_id": "py3.13/power#1",
+     "section": "The power operator",
+     "chars": 1251
+    },
+    {
+     "page_id": "py3.13/raise#1",
+     "section": "The \"raise\" statement",
+     "chars": 3955
+    },
+    {
+     "page_id": "py3.13/return#1",
+     "section": "The \"return\" statement",
+     "chars": 1046
+    },
+    {
+     "page_id": "py3.13/sequence-types#1",
+     "section": "Emulating container types",
+     "chars": 6833
+    },
+    {
+     "page_id": "py3.13/shifting#1",
+     "section": "Shifting operations",
+     "chars": 681
+    },
+    {
+     "page_id": "py3.13/slicings#1",
+     "section": "Slicings",
+     "chars": 1676
+    },
+    {
+     "page_id": "py3.13/specialattrs#1",
+     "section": "Special Attributes",
+     "chars": 866
+    },
+    {
+     "page_id": "py3.13/specialnames#1",
+     "section": "Special method names",
+     "chars": 1358
+    },
+    {
+     "page_id": "py3.13/specialnames#2",
+     "section": "Basic customization",
+     "chars": 14569
+    },
+    {
+     "page_id": "py3.13/specialnames#3",
+     "section": "Customizing attribute access",
+     "chars": 3381
+    },
+    {
+     "page_id": "py3.13/specialnames#4",
+     "section": "Customizing module attribute access",
+     "chars": 1980
+    },
+    {
+     "page_id": "py3.13/specialnames#5",
+     "section": "Implementing Descriptors",
+     "chars": 2349
+    },
+    {
+     "page_id": "py3.13/specialnames#6",
+     "section": "Invoking Descriptors",
+     "chars": 2911
+    },
+    {
+     "page_id": "py3.13/specialnames#7",
+     "section": "__slots__",
+     "chars": 3344
+    },
+    {
+     "page_id": "py3.13/specialnames#8",
+     "section": "Customizing class creation",
+     "chars": 2455
+    },
+    {
+     "page_id": "py3.13/specialnames#9",
+     "section": "Metaclasses",
+     "chars": 979
+    },
+    {
+     "page_id": "py3.13/specialnames#10",
+     "section": "Resolving MRO entries",
+     "chars": 916
+    },
+    {
+     "page_id": "py3.13/specialnames#11",
+     "section": "Determining the appropriate metaclass",
+     "chars": 848
+    },
+    {
+     "page_id": "py3.13/specialnames#12",
+     "section": "Preparing the class namespace",
+     "chars": 797
+    },
+    {
+     "page_id": "py3.13/specialnames#13",
+     "section": "Executing the class body",
+     "chars": 695
+    },
+    {
+     "page_id": "py3.13/specialnames#14",
+     "section": "Creating the class object",
+     "chars": 2249
+    },
+    {
+     "page_id": "py3.13/specialnames#15",
+     "section": "Uses for metaclasses",
+     "chars": 290
+    },
+    {
+     "page_id": "py3.13/specialnames#16",
+     "section": "Customizing instance and subclass checks",
+     "chars": 1473
+    },
+    {
+     "page_id": "py3.13/specialnames#17",
+     "section": "Emulating generic types",
+     "chars": 1129
+    },
+    {
+     "page_id": "py3.13/specialnames#18",
+     "section": "The purpose of *__class_getitem__*",
+     "chars": 812
+    },
+    {
+     "page_id": "py3.13/specialnames#19",
+     "section": "*__class_getitem__* versus *__getitem__*",
+     "chars": 2973
+    },
+    {
+     "page_id": "py3.13/specialnames#20",
+     "section": "Emulating callable objects",
+     "chars": 312
+    },
+    {
+     "page_id": "py3.13/specialnames#21",
+     "section": "Emulating container types",
+     "chars": 6833
+    },
+    {
+     "page_id": "py3.13/specialnames#22",
+     "section": "Emulating numeric types",
+     "chars": 5868
+    },
+    {
+     "page_id": "py3.13/specialnames#23",
+     "section": "With Statement Context Managers",
+     "chars": 1765
+    },
+    {
+     "page_id": "py3.13/specialnames#24",
+     "section": "Customizing positional arguments in class pattern matching",
+     "chars": 1262
+    },
+    {
+     "page_id": "py3.13/specialnames#25",
+     "section": "Emulating buffer types",
+     "chars": 1451
+    },
+    {
+     "page_id": "py3.13/specialnames#26",
+     "section": "Special method lookup",
+     "chars": 2570
+    },
+    {
+     "page_id": "py3.13/string-methods#1",
+     "section": "String Methods",
+     "chars": 32317
+    },
+    {
+     "page_id": "py3.13/strings#1",
+     "section": "String and Bytes literals",
+     "chars": 3606
+    },
+    {
+     "page_id": "py3.13/strings#2",
+     "section": "Escape sequences",
+     "chars": 5834
+    },
+    {
+     "page_id": "py3.13/subscriptions#1",
+     "section": "Subscriptions",
+     "chars": 2595
+    },
+    {
+     "page_id": "py3.13/truth#1",
+     "section": "Truth Value Testing",
+     "chars": 886
+    },
+    {
+     "page_id": "py3.13/try#1",
+     "section": "The \"try\" statement",
+     "chars": 805
+    },
+    {
+     "page_id": "py3.13/try#2",
+     "section": "\"except\" clause",
+     "chars": 2989
+    },
+    {
+     "page_id": "py3.13/try#3",
+     "section": "\"except*\" clause",
+     "chars": 2755
+    },
+    {
+     "page_id": "py3.13/try#4",
+     "section": "\"else\" clause",
+     "chars": 284
+    },
+    {
+     "page_id": "py3.13/try#5",
+     "section": "\"finally\" clause",
+     "chars": 1521
+    },
+    {
+     "page_id": "py3.13/types#1",
+     "section": "The standard type hierarchy",
+     "chars": 683
+    },
+    {
+     "page_id": "py3.13/types#2",
+     "section": "None",
+     "chars": 307
+    },
+    {
+     "page_id": "py3.13/types#3",
+     "section": "NotImplemented",
+     "chars": 750
+    },
+    {
+     "page_id": "py3.13/types#4",
+     "section": "Ellipsis",
+     "chars": 201
+    },
+    {
+     "page_id": "py3.13/types#5",
+     "section": "\"numbers.Number\"",
+     "chars": 1017
+    },
+    {
+     "page_id": "py3.13/types#6",
+     "section": "\"numbers.Integral\"",
+     "chars": 1120
+    },
+    {
+     "page_id": "py3.13/types#7",
+     "section": "\"numbers.Real\" (\"float\")",
+     "chars": 559
+    },
+    {
+     "page_id": "py3.13/types#8",
+     "section": "\"numbers.Complex\" (\"complex\")",
+     "chars": 341
+    },
+    {
+     "page_id": "py3.13/types#9",
+     "section": "Sequences",
+     "chars": 1009
+    },
+    {
+     "page_id": "py3.13/types#10",
+     "section": "Immutable sequences",
+     "chars": 1785
+    },
+    {
+     "page_id": "py3.13/types#11",
+     "section": "Mutable sequences",
+     "chars": 872
+    },
+    {
+     "page_id": "py3.13/types#12",
+     "section": "Set types",
+     "chars": 1135
+    },
+    {
+     "page_id": "py3.13/types#13",
+     "section": "Mappings",
+     "chars": 385
+    },
+    {
+     "page_id": "py3.13/types#14",
+     "section": "Dictionaries",
+     "chars": 1363
+    },
+    {
+     "page_id": "py3.13/types#15",
+     "section": "Callable types",
+     "chars": 123
+    },
+    {
+     "page_id": "py3.13/types#16",
+     "section": "User-defined functions",
+     "chars": 269
+    },
+    {
+     "page_id": "py3.13/types#17",
+     "section": "Special read-only attributes",
+     "chars": 2002
+    },
+    {
+     "page_id": "py3.13/types#18",
+     "section": "Special writable attributes",
+     "chars": 4665
+    },
+    {
+     "page_id": "py3.13/types#19",
+     "section": "Instance methods",
+     "chars": 3552
+    },
+    {
+     "page_id": "py3.13/types#20",
+     "section": "Generator functions",
+     "chars": 618
+    },
+    {
+     "page_id": "py3.13/types#21",
+     "section": "Coroutine functions",
+     "chars": 320
+    },
+    {
+     "page_id": "py3.13/types#22",
+     "section": "Asynchronous generator functions",
+     "chars": 759
+    },
+    {
+     "page_id": "py3.13/types#23",
+     "section": "Built-in functions",
+     "chars": 650
+    },
+    {
+     "page_id": "py3.13/types#24",
+     "section": "Built-in methods",
+     "chars": 449
+    },
+    {
+     "page_id": "py3.13/types#25",
+     "section": "Classes",
+     "chars": 310
+    },
+    {
+     "page_id": "py3.13/types#26",
+     "section": "Class Instances",
+     "chars": 134
+    },
+    {
+     "page_id": "py3.13/types#27",
+     "section": "Modules",
+     "chars": 789
+    },
+    {
+     "page_id": "py3.13/types#28",
+     "section": "Import-related attributes on module objects",
+     "chars": 7029
+    },
+    {
+     "page_id": "py3.13/types#29",
+     "section": "Other writable attributes on module objects",
+     "chars": 534
+    },
+    {
+     "page_id": "py3.13/types#30",
+     "section": "Module dictionaries",
+     "chars": 688
+    },
+    {
+     "page_id": "py3.13/types#31",
+     "section": "Custom classes",
+     "chars": 1449
+    },
+    {
+     "page_id": "py3.13/types#32",
+     "section": "Special attributes",
+     "chars": 5978
+    },
+    {
+     "page_id": "py3.13/types#33",
+     "section": "Special methods",
+     "chars": 669
+    },
+    {
+     "page_id": "py3.13/types#34",
+     "section": "Class instances",
+     "chars": 1316
+    },
+    {
+     "page_id": "py3.13/types#35",
+     "section": "Special attributes",
+     "chars": 311
+    },
+    {
+     "page_id": "py3.13/types#36",
+     "section": "I/O objects (also known as file objects)",
+     "chars": 1062
+    },
+    {
+     "page_id": "py3.13/types#37",
+     "section": "Internal types",
+     "chars": 218
+    },
+    {
+     "page_id": "py3.13/types#38",
+     "section": "Code objects",
+     "chars": 598
+    },
+    {
+     "page_id": "py3.13/types#39",
+     "section": "Special read-only attributes",
+     "chars": 7468
+    },
+    {
+     "page_id": "py3.13/types#40",
+     "section": "Methods on code objects",
+     "chars": 2954
+    },
+    {
+     "page_id": "py3.13/types#41",
+     "section": "Frame objects",
+     "chars": 159
+    },
+    {
+     "page_id": "py3.13/types#42",
+     "section": "Special read-only attributes",
+     "chars": 2866
+    },
+    {
+     "page_id": "py3.13/types#43",
+     "section": "Special writable attributes",
+     "chars": 2324
+    },
+    {
+     "page_id": "py3.13/types#44",
+     "section": "Frame object methods",
+     "chars": 650
+    },
+    {
+     "page_id": "py3.13/types#45",
+     "section": "Traceback objects",
+     "chars": 2749
+    },
+    {
+     "page_id": "py3.13/types#46",
+     "section": "Slice objects",
+     "chars": 823
+    },
+    {
+     "page_id": "py3.13/types#47",
+     "section": "Static method objects",
+     "chars": 566
+    },
+    {
+     "page_id": "py3.13/types#48",
+     "section": "Class method objects",
+     "chars": 399
+    },
+    {
+     "page_id": "py3.13/typesfunctions#1",
+     "section": "Functions",
+     "chars": 427
+    },
+    {
+     "page_id": "py3.13/typesmapping#1",
+     "section": "Mapping Types — \"dict\"",
+     "chars": 9739
+    },
+    {
+     "page_id": "py3.13/typesmapping#2",
+     "section": "Dictionary view objects",
+     "chars": 3270
+    },
+    {
+     "page_id": "py3.13/typesmethods#1",
+     "section": "Methods",
+     "chars": 1663
+    },
+    {
+     "page_id": "py3.13/typesmodules#1",
+     "section": "Modules",
+     "chars": 1051
+    },
+    {
+     "page_id": "py3.13/typesseq#1",
+     "section": "Sequence Types — \"list\", \"tuple\", \"range\"",
+     "chars": 275
+    },
+    {
+     "page_id": "py3.13/typesseq#2",
+     "section": "Common Sequence Operations",
+     "chars": 7760
+    },
+    {
+     "page_id": "py3.13/typesseq#3",
+     "section": "Immutable Sequence Types",
+     "chars": 456
+    },
+    {
+     "page_id": "py3.13/typesseq#4",
+     "section": "Mutable Sequence Types",
+     "chars": 5146
+    },
+    {
+     "page_id": "py3.13/typesseq#5",
+     "section": "Lists",
+     "chars": 3313
+    },
+    {
+     "page_id": "py3.13/typesseq#6",
+     "section": "Tuples",
+     "chars": 1849
+    },
+    {
+     "page_id": "py3.13/typesseq#7",
+     "section": "Ranges",
+     "chars": 3712
+    },
+    {
+     "page_id": "py3.13/typesseq-mutable#1",
+     "section": "Mutable Sequence Types",
+     "chars": 5146
+    },
+    {
+     "page_id": "py3.13/unary#1",
+     "section": "Unary arithmetic and bitwise operations",
+     "chars": 844
+    },
+    {
+     "page_id": "py3.13/while#1",
+     "section": "The \"while\" statement",
+     "chars": 697
+    },
+    {
+     "page_id": "py3.13/with#1",
+     "section": "The \"with\" statement",
+     "chars": 3318
+    },
+    {
+     "page_id": "py3.13/yield#1",
+     "section": "The \"yield\" statement",
+     "chars": 815
+    }
+   ]
+  }
+ ]
+}

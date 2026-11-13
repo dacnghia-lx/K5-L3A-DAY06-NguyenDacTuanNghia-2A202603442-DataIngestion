@@ -1,0 +1,142 @@
+[
+  {
+    "pos_id": "pos01",
+    "page_id": "py3.13/assert#1",
+    "offset": 570,
+    "context": "\"AssertionError\" refer\nto the built-in variables with those names.  In the current\nimplementation, the built-in variable",
+    "A": {
+      "chunk_id": "A:py3.13/assert#1:c001",
+      "text": "xpression2)\n\nThese equivalences assume that \"__debug__\" and \"AssertionError\" refer\nto the built-in variables with those names.  In the current\nimplementation, the built-in variable \"__debug__\" is \"True\" under\nnormal circumstances, \"False\" when optimization is requested (command\nline option \"-O\").  The current code generator emits no code for an\n\"assert\" statement when optimization is requested at compile time.\nNote that it is unnecessary to include the source code for the\nexpression that failed"
+    },
+    "B": {
+      "chunk_id": "B:py3.13/assert#1:c001",
+      "text": "[The \"assert\" statement]\nThese equivalences assume that \"__debug__\" and \"AssertionError\" refer\nto the built-in variables with those names.  In the current\nimplementation, the built-in variable \"__debug__\" is \"True\" under\nnormal circumstances, \"False\" when optimization is requested (command\nline option \"-O\").  The current code generator emits no code for an\n\"assert\" statement when optimization is requested at compile time.\nNote that it is unnecessary to include the source code for the\nexpression that failed in the error message; it will be displayed as\npart of the stack trace.\n\nAssignments to \"__debug__\" are illegal.  The value for the built-in\nvariable is determined when the interpreter starts."
+    }
+  },
+  {
+    "pos_id": "pos02",
+    "page_id": "py3.13/bltin-type-objects#1",
+    "offset": 153,
+    "context": " is\naccessed by the built-in function \"type()\".  There are no special\noperations on types.  The standard module \"types\" ",
+    "A": {
+      "chunk_id": "A:py3.13/bltin-type-objects#1:c000",
+      "text": "Type Objects\n************\n\nType objects represent the various object types.  An object’s type is\naccessed by the built-in function \"type()\".  There are no special\noperations on types.  The standard module \"types\" defines names for\nall standard built-in types.\n\nTypes are written like this: \"<class 'int'>\"."
+    },
+    "B": {
+      "chunk_id": "B:py3.13/bltin-type-objects#1:c000",
+      "text": "Type Objects\n************\n\nType objects represent the various object types.  An object’s type is\naccessed by the built-in function \"type()\".  There are no special\noperations on types.  The standard module \"types\" defines names for\nall standard built-in types.\n\nTypes are written like this: \"<class 'int'>\"."
+    }
+  },
+  {
+    "pos_id": "pos03",
+    "page_id": "py3.13/compound#23",
+    "offset": 1603,
+    "context": "nce pattern is fixed-length:\n\n   1. If the length of the subject sequence is not equal to the number\n      of subpattern",
+    "A": {
+      "chunk_id": "A:py3.13/compound#23:c003",
+      "text": "e is an instance of \"str\", \"bytes\" or\n   \"bytearray\" the sequence pattern fails.\n\n3. The subsequent steps depend on whether the sequence pattern is\n   fixed or variable-length.\n\n   If the sequence pattern is fixed-length:\n\n   1. If the length of the subject sequence is not equal to the number\n      of subpatterns, the sequence pattern fails\n\n   2. Subpatterns in the sequence pattern are matched to their\n      corresponding items in the subject sequence from left to right.\n      Matching stops as"
+    },
+    "B": {
+      "chunk_id": "B:py3.13/compound#23:c001",
+      "text": "[Compound statements > Sequence Patterns]\nAt most one star subpattern may be in a sequence pattern.  The star\nsubpattern may occur in any position. If no star subpattern is\npresent, the sequence pattern is a fixed-length sequence pattern;\notherwise it is a variable-length sequence pattern.\n\nThe following is the logical flow for matching a sequence pattern\nagainst a subject value:\n\n1. If the subject value is not a sequence [2], the sequence pattern\n   fails.\n\n2. If the subject value is an instance of \"str\", \"bytes\" or\n   \"bytearray\" the sequence pattern fails.\n\n3. The subsequent steps depend on whether the sequence pattern is\n   fixed or variable-length.\n\n   If the sequence pattern is fixed-length:\n\n   1. If the length of the subject sequence is not equal to the number\n      of subpatterns, the sequence pattern fails"
+    }
+  },
+  {
+    "pos_id": "pos04",
+    "page_id": "py3.13/debugger#2",
+    "offset": 2772,
+    "context": "the *function* (a function or method object, not a string)\n   with the given arguments.  When \"runcall()\" returns, it re",
+    "A": {
+      "chunk_id": "A:py3.13/debugger#2:c006",
+      "text": "s)\n\n   Call the *function* (a function or method object, not a string)\n   with the given arguments.  When \"runcall()\" returns, it returns\n   whatever the function call returned.  The debugger prompt appears\n   as soon as the function is entered.\n\npdb.set_trace(*, header=None)\n\n   Enter the debugger at the calling stack frame.  This is useful to\n   hard-code a breakpoint at a given point in a program, even if the\n   code is not otherwise being debugged (e.g. when an assertion\n   fails).  If given"
+    },
+    "B": {
+      "chunk_id": "B:py3.13/debugger#2:c003",
+      "text": "[\"pdb\" — The Python Debugger > Command-line interface]\nCall the *function* (a function or method object, not a string)\n   with the given arguments.  When \"runcall()\" returns, it returns\n   whatever the function call returned.  The debugger prompt appears\n   as soon as the function is entered.\n\npdb.set_trace(*, header=None)\n\n   Enter the debugger at the calling stack frame.  This is useful to\n   hard-code a breakpoint at a given point in a program, even if the\n   code is not otherwise being debugged (e.g. when an assertion\n   fails).  If given, *header* is printed to the console just before\n   debugging begins.\n\n   Changed in version 3.7: The keyword-only argument *header*.\n\n   Changed in version 3.13: \"set_trace()\" will enter the debugger\n   immediately, rather than on the next line of code to be executed.\n\npdb.post_mortem(t=None)\n\n   Enter post-mortem debugging of the given exception or traceback\n   object. If no value is given, it uses the exception that is\n   currently being handled, or raises \"ValueError\" if there isn’t one."
+    }
+  },
+  {
+    "pos_id": "pos05",
+    "page_id": "py3.13/formatstrings#3",
+    "offset": 2231,
+    "context": "'           centered           '\n   >>> '{:*^30}'.format('centered')  # use '*' as a fill char\n   '***********centered**",
+    "A": {
+      "chunk_id": "A:py3.13/formatstrings#3:c004",
+      "text": ">>> \"repr() shows quotes: {!r}; str() doesn't: {!s}\".format('test1', 'test2')\n   \"repr() shows quotes: 'test1'; str() doesn't: test2\"\n\nAligning the text and specifying a width:\n\n   >>> '{:<30}'.format('left aligned')\n   'left aligned                  '\n   >>> '{:>30}'.format('right aligned')\n   '                 right aligned'\n   >>> '{:^30}'.format('centered')\n   '           centered           '\n   >>> '{:*^30}'.format('centered')  # use '*' as a fill char\n   '***********centered***********"
+    },
+    "B": {
+      "chunk_id": "B:py3.13/formatstrings#3:c002",
+      "text": "[Format string syntax > Format examples]\n>>> \"repr() shows quotes: {!r}; str() doesn't: {!s}\".format('test1', 'test2')\n   \"repr() shows quotes: 'test1'; str() doesn't: test2\"\n\nAligning the text and specifying a width:\n\n   >>> '{:<30}'.format('left aligned')\n   'left aligned                  '\n   >>> '{:>30}'.format('right aligned')\n   '                 right aligned'\n   >>> '{:^30}'.format('centered')\n   '           centered           '\n   >>> '{:*^30}'.format('centered')  # use '*' as a fill char\n   '***********centered***********'\n\nReplacing \"%+f\", \"%-f\", and \"% f\" and specifying a sign:\n\n   >>> '{:+f}; {:+f}'.format(3.14, -3.14)  # show it always\n   '+3.140000; -3.140000'\n   >>> '{: f}; {: f}'.format(3.14, -3.14)  # show a space for positive numbers\n   ' 3.140000; -3.140000'\n   >>> '{:-f}; {:-f}'.format(3.14, -3.14)  # show only the minus -- same as '{:f}; {:f}'\n   '3.140000; -3.140000'\n\nReplacing \"%x\" and \"%o\" and converting the value to different bases:"
+    }
+  },
+  {
+    "pos_id": "pos06",
+    "page_id": "py3.13/match#4",
+    "offset": 308,
+    "context": "d its\npattern is irrefutable.  A pattern is considered irrefutable if we can\nprove from its syntax alone that it will al",
+    "A": {
+      "chunk_id": "A:py3.13/match#4:c000",
+      "text": "Irrefutable Case Blocks\n=======================\n\nAn irrefutable case block is a match-all case block.  A match\nstatement may have at most one irrefutable case block, and it must be\nlast.\n\nA case block is considered irrefutable if it has no guard and its\npattern is irrefutable.  A pattern is considered irrefutable if we can\nprove from its syntax alone that it will always succeed.  Only the\nfollowing patterns are irrefutable:\n\n* AS Patterns whose left-hand side is irrefutable\n\n* OR Patterns contai"
+    },
+    "B": {
+      "chunk_id": "B:py3.13/match#4:c000",
+      "text": "Irrefutable Case Blocks\n=======================\n\nAn irrefutable case block is a match-all case block.  A match\nstatement may have at most one irrefutable case block, and it must be\nlast.\n\nA case block is considered irrefutable if it has no guard and its\npattern is irrefutable.  A pattern is considered irrefutable if we can\nprove from its syntax alone that it will always succeed.  Only the\nfollowing patterns are irrefutable:\n\n* AS Patterns whose left-hand side is irrefutable\n\n* OR Patterns containing at least one irrefutable pattern\n\n* Capture Patterns\n\n* Wildcard Patterns\n\n* parenthesized irrefutable patterns"
+    }
+  },
+  {
+    "pos_id": "pos07",
+    "page_id": "py3.13/specialattrs#1",
+    "offset": 433,
+    "context": "e class, function, method, descriptor, or\n   generator instance.\n\n   Added in version 3.3.\n\ndefinition.__module__\n\n   Th",
+    "A": {
+      "chunk_id": "A:py3.13/specialattrs#1:c000",
+      "text": "Special Attributes\n******************\n\nThe implementation adds a few special read-only attributes to several\nobject types, where they are relevant.  Some of these are not reported\nby the \"dir()\" built-in function.\n\ndefinition.__name__\n\n   The name of the class, function, method, descriptor, or generator\n   instance.\n\ndefinition.__qualname__\n\n   The *qualified name* of the class, function, method, descriptor, or\n   generator instance.\n\n   Added in version 3.3.\n\ndefinition.__module__\n\n   The name"
+    },
+    "B": {
+      "chunk_id": "B:py3.13/specialattrs#1:c000",
+      "text": "Special Attributes\n******************\n\nThe implementation adds a few special read-only attributes to several\nobject types, where they are relevant.  Some of these are not reported\nby the \"dir()\" built-in function.\n\ndefinition.__name__\n\n   The name of the class, function, method, descriptor, or generator\n   instance.\n\ndefinition.__qualname__\n\n   The *qualified name* of the class, function, method, descriptor, or\n   generator instance.\n\n   Added in version 3.3.\n\ndefinition.__module__\n\n   The name of the module in which a class or function was defined.\n\ndefinition.__doc__\n\n   The documentation string of a class or function, or \"None\" if\n   undefined.\n\ndefinition.__type_params__\n\n   The type parameters of generic classes, functions, and type\n   aliases. For classes and functions that are not generic, this will\n   be an empty tuple.\n\n   Added in version 3.12."
+    }
+  },
+  {
+    "pos_id": "pos08",
+    "page_id": "py3.13/specialnames#8",
+    "offset": 1227,
+    "context": "\n      class AustralianPhilosopher(Philosopher, default_name=\"Bruce\"):\n          pass\n\n   The default implementation \"ob",
+    "A": {
+      "chunk_id": "A:py3.13/specialnames#8:c002",
+      "text": "eded\n   keyword arguments and pass the others over to the base class, as\n   in:\n\n      class Philosopher:\n          def __init_subclass__(cls, /, default_name, **kwargs):\n              super().__init_subclass__(**kwargs)\n              cls.default_name = default_name\n\n      class AustralianPhilosopher(Philosopher, default_name=\"Bruce\"):\n          pass\n\n   The default implementation \"object.__init_subclass__\" does nothing,\n   but raises an error if it is called with any arguments.\n\n   Note:"
+    },
+    "B": {
+      "chunk_id": "B:py3.13/specialnames#8:c001",
+      "text": "[Special method names > Customizing class creation]\nclass Philosopher:\n          def __init_subclass__(cls, /, default_name, **kwargs):\n              super().__init_subclass__(**kwargs)\n              cls.default_name = default_name\n\n      class AustralianPhilosopher(Philosopher, default_name=\"Bruce\"):\n          pass\n\n   The default implementation \"object.__init_subclass__\" does nothing,\n   but raises an error if it is called with any arguments.\n\n   Note:\n\n     The metaclass hint \"metaclass\" is consumed by the rest of the\n     type machinery, and is never passed to \"__init_subclass__\"\n     implementations. The actual metaclass (rather than the explicit\n     hint) can be accessed as \"type(cls)\".\n\n   Added in version 3.6.\n\nWhen a class is created, \"type.__new__()\" scans the class variables\nand makes callbacks to those with a \"__set_name__()\" hook.\n\nobject.__set_name__(self, owner, name)\n\n   Automatically called at the time the owning class *owner* is\n   created. The object has been assigned to *name* in that class:"
+    }
+  },
+  {
+    "pos_id": "pos09",
+    "page_id": "py3.13/types#21",
+    "offset": 160,
+    "context": "called a\n*coroutine function*.  Such a function, when called, returns a\n*coroutine* object.  It may contain \"await\" expr",
+    "A": {
+      "chunk_id": "A:py3.13/types#21:c000",
+      "text": "Coroutine functions\n-------------------\n\nA function or method which is defined using \"async def\" is called a\n*coroutine function*.  Such a function, when called, returns a\n*coroutine* object.  It may contain \"await\" expressions, as well as\n\"async with\" and \"async for\" statements. See also the Coroutine\nObjects section."
+    },
+    "B": {
+      "chunk_id": "B:py3.13/types#21:c000",
+      "text": "Coroutine functions\n-------------------\n\nA function or method which is defined using \"async def\" is called a\n*coroutine function*.  Such a function, when called, returns a\n*coroutine* object.  It may contain \"await\" expressions, as well as\n\"async with\" and \"async for\" statements. See also the Coroutine\nObjects section."
+    }
+  },
+  {
+    "pos_id": "pos10",
+    "page_id": "py3.13/types#44",
+    "offset": 325,
+    "context": "k reference cycles involving frame\n   objects (for example when catching an exception and storing its\n   traceback for l",
+    "A": {
+      "chunk_id": "A:py3.13/types#44:c000",
+      "text": "Frame object methods\n~~~~~~~~~~~~~~~~~~~~\n\nFrame objects support one method:\n\nframe.clear()\n\n   This method clears all references to local variables held by the\n   frame.  Also, if the frame belonged to a *generator*, the generator\n   is finalized.  This helps break reference cycles involving frame\n   objects (for example when catching an exception and storing its\n   traceback for later use).\n\n   \"RuntimeError\" is raised if the frame is currently executing or\n   suspended.\n\n   Added in version 3"
+    },
+    "B": {
+      "chunk_id": "B:py3.13/types#44:c000",
+      "text": "Frame object methods\n~~~~~~~~~~~~~~~~~~~~\n\nFrame objects support one method:\n\nframe.clear()\n\n   This method clears all references to local variables held by the\n   frame.  Also, if the frame belonged to a *generator*, the generator\n   is finalized.  This helps break reference cycles involving frame\n   objects (for example when catching an exception and storing its\n   traceback for later use).\n\n   \"RuntimeError\" is raised if the frame is currently executing or\n   suspended.\n\n   Added in version 3.4.\n\n   Changed in version 3.13: Attempting to clear a suspended frame\n   raises \"RuntimeError\" (as has always been the case for executing\n   frames)."
+    }
+  }
+]

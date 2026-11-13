@@ -1,0 +1,66 @@
+{
+  "metadata_all_ok_test_top3": {
+    "A": "15/15",
+    "B": "15/15",
+    "C": "15/15"
+  },
+  "filter_compliance": {
+    "A": {
+      "dev": {
+        "respected": 0,
+        "n": 3,
+        "ids": [
+          "q13",
+          "q14",
+          "q15"
+        ]
+      },
+      "test": {
+        "respected": 0,
+        "n": 2,
+        "ids": [
+          "q19",
+          "q20"
+        ]
+      }
+    },
+    "B": {
+      "dev": {
+        "respected": 0,
+        "n": 3,
+        "ids": [
+          "q13",
+          "q14",
+          "q15"
+        ]
+      },
+      "test": {
+        "respected": 0,
+        "n": 2,
+        "ids": [
+          "q19",
+          "q20"
+        ]
+      }
+    },
+    "C": {
+      "dev": {
+        "respected": 3,
+        "n": 3,
+        "ids": [
+          "q13",
+          "q14",
+          "q15"
+        ]
+      },
+      "test": {
+        "respected": 2,
+        "n": 2,
+        "ids": [
+          "q19",
+          "q20"
+        ]
+      }
+    }
+  }
+}

@@ -8,3 +8,7 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+
+# Derived vector index (rebuild with: cd starter && python -m src.run --rebuild)
+starter/chroma_db/
+venv/

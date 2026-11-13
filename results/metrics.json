@@ -1,0 +1,238 @@
+{
+  "summary": {
+    "A": {
+      "dev": {
+        "n": 15,
+        "hit1": 4,
+        "hit3": 4,
+        "gold_page_in_top3": 12,
+        "evidence_split_suspected": [
+          "q01",
+          "q02",
+          "q05",
+          "q09",
+          "q10",
+          "q12",
+          "q13",
+          "q14"
+        ],
+        "filter_questions": 3,
+        "filter_questions_hit3": 1,
+        "misses_at_3": [
+          "q01",
+          "q02",
+          "q04",
+          "q05",
+          "q06",
+          "q08",
+          "q09",
+          "q10",
+          "q12",
+          "q13",
+          "q14"
+        ]
+      },
+      "test": {
+        "n": 5,
+        "hit1": 1,
+        "hit3": 1,
+        "gold_page_in_top3": 3,
+        "evidence_split_suspected": [
+          "q17",
+          "q18"
+        ],
+        "filter_questions": 2,
+        "filter_questions_hit3": 0,
+        "misses_at_3": [
+          "q17",
+          "q18",
+          "q19",
+          "q20"
+        ]
+      },
+      "all": {
+        "n": 20,
+        "hit1": 5,
+        "hit3": 5,
+        "gold_page_in_top3": 15,
+        "evidence_split_suspected": [
+          "q01",
+          "q02",
+          "q05",
+          "q09",
+          "q10",
+          "q12",
+          "q13",
+          "q14",
+          "q17",
+          "q18"
+        ],
+        "filter_questions": 5,
+        "filter_questions_hit3": 1,
+        "misses_at_3": [
+          "q01",
+          "q02",
+          "q04",
+          "q05",
+          "q06",
+          "q08",
+          "q09",
+          "q10",
+          "q12",
+          "q13",
+          "q14",
+          "q17",
+          "q18",
+          "q19",
+          "q20"
+        ]
+      }
+    },
+    "B": {
+      "dev": {
+        "n": 15,
+        "hit1": 7,
+        "hit3": 8,
+        "gold_page_in_top3": 10,
+        "evidence_split_suspected": [
+          "q03",
+          "q05"
+        ],
+        "filter_questions": 3,
+        "filter_questions_hit3": 2,
+        "misses_at_3": [
+          "q01",
+          "q03",
+          "q05",
+          "q06",
+          "q07",
+          "q08",
+          "q14"
+        ]
+      },
+      "test": {
+        "n": 5,
+        "hit1": 0,
+        "hit3": 1,
+        "gold_page_in_top3": 2,
+        "evidence_split_suspected": [
+          "q17"
+        ],
+        "filter_questions": 2,
+        "filter_questions_hit3": 0,
+        "misses_at_3": [
+          "q17",
+          "q18",
+          "q19",
+          "q20"
+        ]
+      },
+      "all": {
+        "n": 20,
+        "hit1": 7,
+        "hit3": 9,
+        "gold_page_in_top3": 12,
+        "evidence_split_suspected": [
+          "q03",
+          "q05",
+          "q17"
+        ],
+        "filter_questions": 5,
+        "filter_questions_hit3": 2,
+        "misses_at_3": [
+          "q01",
+          "q03",
+          "q05",
+          "q06",
+          "q07",
+          "q08",
+          "q14",
+          "q17",
+          "q18",
+          "q19",
+          "q20"
+        ]
+      }
+    },
+    "C": {
+      "dev": {
+        "n": 15,
+        "hit1": 7,
+        "hit3": 8,
+        "gold_page_in_top3": 10,
+        "evidence_split_suspected": [
+          "q03",
+          "q05"
+        ],
+        "filter_questions": 3,
+        "filter_questions_hit3": 2,
+        "misses_at_3": [
+          "q01",
+          "q03",
+          "q05",
+          "q06",
+          "q07",
+          "q08",
+          "q14"
+        ]
+      },
+      "test": {
+        "n": 5,
+        "hit1": 0,
+        "hit3": 2,
+        "gold_page_in_top3": 3,
+        "evidence_split_suspected": [
+          "q17"
+        ],
+        "filter_questions": 2,
+        "filter_questions_hit3": 1,
+        "misses_at_3": [
+          "q17",
+          "q18",
+          "q19"
+        ]
+      },
+      "all": {
+        "n": 20,
+        "hit1": 7,
+        "hit3": 10,
+        "gold_page_in_top3": 13,
+        "evidence_split_suspected": [
+          "q03",
+          "q05",
+          "q17"
+        ],
+        "filter_questions": 5,
+        "filter_questions_hit3": 3,
+        "misses_at_3": [
+          "q01",
+          "q03",
+          "q05",
+          "q06",
+          "q07",
+          "q08",
+          "q14",
+          "q17",
+          "q18",
+          "q19"
+        ]
+      }
+    }
+  },
+  "query_latency_ms_avg": {
+    "A": 3.77,
+    "B": 3.3,
+    "C": 4.67
+  },
+  "exact_vs_hnsw": {
+    "A": {
+      "top3_overlap": "52/60"
+    },
+    "B": {
+      "top3_overlap": "58/60"
+    },
+    "C": {
+      "top3_overlap": "59/60"
+    }
+  }
+}

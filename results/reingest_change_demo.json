@@ -1,0 +1,23 @@
+{
+  "edited_page": "py3.13/try#4",
+  "removed_page": "py3.13/pass#1",
+  "initial": {
+    "before": 0,
+    "embedded": 1415,
+    "deleted": 0,
+    "after": 1415
+  },
+  "after_change": {
+    "before": 1415,
+    "embedded": 1,
+    "deleted": 1,
+    "after": 1414
+  },
+  "after_restore": {
+    "before": 1414,
+    "embedded": 2,
+    "deleted": 0,
+    "after": 1415
+  },
+  "expected_after_change_count": 1414
+}
